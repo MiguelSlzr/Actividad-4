@@ -86,18 +86,7 @@ public class MyStack {
 				palabra = cadena;
 				
 				
-				for(i = 0; i <= palabra.length()-1; i++){
-					push(palabra.charAt(i));
-			}
-			
-			for(i = 0; i <= palabra.length()-1; i++){
-				reversed[i] = stack[palabra.length()-1-i];
-			}
-			
-			for(i = 0; i <= palabra.length()-1; i++){
-				palabraInversa += reversed[i];
-			}
-				
+				palabraInversa =(reverse(palabra));
 
 				
 				if(palabra.equals(palabraInversa)) {
